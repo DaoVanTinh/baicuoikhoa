@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CreatePass</title>
+  </head>
+  <body class="cre__dad">
+    <section>
+      <head>
+        <div class="sign__logo">
+          <a href="./index.html">
+            <img src="./assets/img/logo.png" alt="#" />
+          </a>
+        </div>
+      </head>
+    </section>
+    <div class="cre__body">
+      <h1 class="cre__title">Tạo mật khẩu</h1>
+      <div class="cre__input">
+        <span class="cre__label">Mật khẩu</span>
+        <input type="password" id="passwordInput" />
+        <div id="cre__errorMessage" class="cre__error-message"></div>
+      </div>
+      <div class="log__button cre__log__button" onclick="savePassword()">
+        <span>Tiếp tục</span>
+      </div>
+    </div>
+    <div class="log__footer cre__log__footer">
+      <span>Trang web này được bảo vệ bằng reCAPTCHA và tuân theo</span>
+      <a href="#">Chính sách quyền riêng tư </a>
+      <span>cũng như</span>
+      <a href="#">Điều khoản dịch vụ </a>
+      <span>của Google</span>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

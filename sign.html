@@ -21,9 +21,10 @@
           <div class="sign__label">
             <span>Địa chỉ email</span>
           </div>
-          <input type="text" placeholder="name@domain.com" />
+          <input type="email" id="emailInput" placeholder="name@domain.com" />
+          <div id="errorMessage" class="sign__error-message"></div>
           <a href="#">Dùng số điện thoại</a>
-          <div class="sign__button">
+          <div class="sign__button" onclick="validateEmail()">
             <span>Tiếp theo</span>
           </div>
         </div>
@@ -49,4 +50,5 @@
       </span>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

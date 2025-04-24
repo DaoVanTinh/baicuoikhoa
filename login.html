@@ -35,11 +35,19 @@
           <input
             class="log__input"
             type="text"
+            id="loginEmail"
             placeholder="Email hoặc tên người dùng"
           />
+          <input
+            class="log__input"
+            type="password"
+            id="loginPassword"
+            placeholder="Mật khẩu"
+          />
         </div>
-        <div class="log__button">
-          <span>Tiếp tục</span>
+        <div id="log__errorMessage" class="log__errorMessage" style="margin-bottom: 20px;"></div>
+        <div class="log__button" onclick="login()">
+          <span>Đăng Nhập</span>
         </div>
         <div class="log__sign">
           <span>Bạn chưa có tài khoản?</span>
@@ -55,4 +63,5 @@
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>
