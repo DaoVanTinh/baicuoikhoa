@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Music</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section>
+      <head>
+        <div class="header">
+          <div class="header__logo">
+            <img src="./assets/img/logo.png" alt="" />
+          </div>
+          <div class="header__topbar">
+            <div class="header__search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header__button"><span>Mở ứng dụng</span></div>
+            <label for="input__nav" class="header__menu">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" class="nav__input" name="" id="input__nav" />
+            <!-- Menu -->
+            <div class="header__menu__list">
+              <label for="input__nav" class="icon__exit">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+              </label>
+              <span class="logsig"><a href="./login.html">Đăng nhập</a></span>
+              <span class="logsig"><a href="./sign.html">Đăng ký</a></span>
+              <span class="space">──</span>
+              <span class="list">Premium</span>
+              <span class="list">Trợ giúp</span>
+              <span class="list">Tải xuống</span>
+              <span class="list">Quyền riêng tư</span>
+              <span class="list">Điều khoản</span>
+            </div>
+          </div>
+        </div>
+      </head>
+    </section>
+    <!-- Banner -->
+    <section>
+      <div class="banner">
+        <div class="banner__exit">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <span class="banner__titlee">Dùng Premium</span>
+        <span class="banner__content"
+          >Làm chủ trải nghiệm nghe nhạc, không có quảng cáo. Hủy bất cứ lúc
+          nào.</span
+        >
+        <div class="banner__button">
+          <div>
+            <span>Dùng Premium</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content -->
+    <section>
+      <div class="content">
+        <div class="trending">
+          <div class="trending__titlee">
+            <span>Những bài hát thịnh hành</span>
+          </div>
+          <div class="trending__list">
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.ytimg.com/vi/98zHKN-xSHk/maxresdefault.jpg"
+                  alt=""
+                />
+                <span>Blue</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b27376da72cd1de9b25fbe44b26e"
+                  alt=""
+                />
+                <span>Cry For Me </span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.ytimg.com/vi/h4VJGNNSQnw/maxresdefault.jpg"
+                  alt=""
+                />
+                <span>I Really Want to Stay at Your House </span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://bedunim.ir/wp-content/uploads/2024/11/Stromae-et-Pomme-Ma-Meilleure-Ennemie-300x169.jpg"
+                  alt=""
+                />
+                <span>Ma Meilleure Ennemie</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.ytimg.com/vi/aqRuzjIBkxY/maxresdefault.jpg"
+                  alt=""
+                />
+                <span>MASAYUME CHASING</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU3n70LudipI5a2jYrwf-a-4qyX4yJLIYb9w&s"
+                  alt=""
+                />
+                <span>Hikaru Nara</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="artist">
+          <div class="trending__titlee">
+            <span>Nghệ Sĩ Phổ Biến</span>
+          </div>
+          <div class="trending__list">
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHr0lKnXYMDQyCzu0gpwQF7FO-5lfMZM68tA&s"
+                  alt=""
+                />
+                <span>Yung Kai</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i1.sndcdn.com/avatars-Hz96x92zuUHuabqA-BTKUwA-t240x240.jpg"
+                  alt=""
+                />
+                <span>Michita</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebc0c038e8fe31ae46ed87d6e7"
+                  alt=""
+                />
+                <span>Rosa Walton</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://media-cdn-v2.laodong.vn/storage/newsportal/Uploaded/vohuyenmaichau/2014_10_31/stromae_MWQA.jpg"
+                  alt=""
+                />
+                <span>Stromae</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEm2mxJSW1AT5_geGuAPsoMDZinH1l6BTKQ&s"
+                  alt=""
+                />
+                <span>BoA</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img src="./assets/img/tuphuongduy.jpg" alt="" />
+                <span>Từ Phương Duy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="album">
+          <div class="trending__titlee">
+            <span>Album và đĩa đơn nổi tiếng</span>
+          </div>
+          <div class="trending__list">
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHr0lKnXYMDQyCzu0gpwQF7FO-5lfMZM68tA&s"
+                  alt=""
+                />
+                <span>Yung Kai</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i1.sndcdn.com/avatars-Hz96x92zuUHuabqA-BTKUwA-t240x240.jpg"
+                  alt=""
+                />
+                <span>Michita</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebc0c038e8fe31ae46ed87d6e7"
+                  alt=""
+                />
+                <span>Rosa Walton</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://media-cdn-v2.laodong.vn/storage/newsportal/Uploaded/vohuyenmaichau/2014_10_31/stromae_MWQA.jpg"
+                  alt=""
+                />
+                <span>Stromae</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEm2mxJSW1AT5_geGuAPsoMDZinH1l6BTKQ&s"
+                  alt=""
+                />
+                <span>BoA</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://avatar-ex-swe.nixcdn.com/playlist/2014/11/17/5/4/f/5/1416232761172_500.jpg"
+                  alt=""
+                />
+                <span>Goose House</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="radio">
+          <div class="trending__titlee">
+            <span>Radio Phổ Biến</span>
+          </div>
+          <div class="trending__list">
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHr0lKnXYMDQyCzu0gpwQF7FO-5lfMZM68tA&s"
+                  alt=""
+                />
+                <span>Yung Kai</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i1.sndcdn.com/avatars-Hz96x92zuUHuabqA-BTKUwA-t240x240.jpg"
+                  alt=""
+                />
+                <span>Michita</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebc0c038e8fe31ae46ed87d6e7"
+                  alt=""
+                />
+                <span>Rosa Walton</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://media-cdn-v2.laodong.vn/storage/newsportal/Uploaded/vohuyenmaichau/2014_10_31/stromae_MWQA.jpg"
+                  alt=""
+                />
+                <span>Stromae</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEm2mxJSW1AT5_geGuAPsoMDZinH1l6BTKQ&s"
+                  alt=""
+                />
+                <span>BoA</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://avatar-ex-swe.nixcdn.com/playlist/2014/11/17/5/4/f/5/1416232761172_500.jpg"
+                  alt=""
+                />
+                <span>Goose House</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ranking">
+          <div class="trending__titlee">
+            <span>Bảng xếp hạng nổi bật</span>
+          </div>
+          <div class="trending__list">
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHr0lKnXYMDQyCzu0gpwQF7FO-5lfMZM68tA&s"
+                  alt=""
+                />
+                <span>Yung Kai</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i1.sndcdn.com/avatars-Hz96x92zuUHuabqA-BTKUwA-t240x240.jpg"
+                  alt=""
+                />
+                <span>Michita</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebc0c038e8fe31ae46ed87d6e7"
+                  alt=""
+                />
+                <span>Rosa Walton</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://media-cdn-v2.laodong.vn/storage/newsportal/Uploaded/vohuyenmaichau/2014_10_31/stromae_MWQA.jpg"
+                  alt=""
+                />
+                <span>Stromae</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEm2mxJSW1AT5_geGuAPsoMDZinH1l6BTKQ&s"
+                  alt=""
+                />
+                <span>BoA</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://avatar-ex-swe.nixcdn.com/playlist/2014/11/17/5/4/f/5/1416232761172_500.jpg"
+                  alt=""
+                />
+                <span>Goose House</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="choose">
+          <div class="trending__titlee">
+            <span>Lựa chọn từ Spotify</span>
+          </div>
+          <div class="trending__list">
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHr0lKnXYMDQyCzu0gpwQF7FO-5lfMZM68tA&s"
+                  alt=""
+                />
+                <span>Yung Kai</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i1.sndcdn.com/avatars-Hz96x92zuUHuabqA-BTKUwA-t240x240.jpg"
+                  alt=""
+                />
+                <span>Michita</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebc0c038e8fe31ae46ed87d6e7"
+                  alt=""
+                />
+                <span>Rosa Walton</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://media-cdn-v2.laodong.vn/storage/newsportal/Uploaded/vohuyenmaichau/2014_10_31/stromae_MWQA.jpg"
+                  alt=""
+                />
+                <span>Stromae</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEm2mxJSW1AT5_geGuAPsoMDZinH1l6BTKQ&s"
+                  alt=""
+                />
+                <span>BoA</span>
+              </div>
+            </div>
+            <div class="trending__item">
+              <div class="trending__image">
+                <img
+                  src="https://avatar-ex-swe.nixcdn.com/playlist/2014/11/17/5/4/f/5/1416232761172_500.jpg"
+                  alt=""
+                />
+                <span>Goose House</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section>
+      <div class="footer">
+        <div class="company">
+          <p>Công ty</p>
+          <span>Giới thiệu</span>
+          <span>Việc làm</span>
+          <span>For the Record</span>
+        </div>
+        <div class="company">
+          <p>Cộng đồng</p>
+          <span>Dành cho các Nghệ sĩ</span>
+          <span>Nhà phát triển</span>
+          <span>Quảng cáo</span>
+          <span>Nhà đầu tư</span>
+          <span>Nhà cung cấp</span>
+        </div>
+        <div class="company">
+          <p>Liên kết hữu ích</p>
+          <span>Hỗ trợ</span>
+          <span>Ứng dụng Di động Miễn phí</span>
+        </div>
+        <div class="company">
+          <p>Các gói của Spotify</p>
+          <span>Premium Individual</span>
+          <span>Premium Student</span>
+          <span>Spotify Free</span>
+        </div>
+        <div class="icon">
+          <div class="icon__circle">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="icon__circle">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="icon__circle">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <hr class="cut" />
+        <div class="policy">
+          <span class="policy__item">Pháp lý</span>
+          <span class="policy__item">Trung tâm an toàn và quyền riêng tư</span>
+          <span class="policy__item">Chính sách quyền riêng tư</span>
+          <span class="policy__item">Cookie</span>
+          <span class="policy__item">Giới thiệu Quảng cáo</span>
+          <span class="policy__item">Hỗ trợ tiếp cận</span>
+        </div>
+        <div class="spotify">
+          <p>© 2025 Spotify AB</p>
+        </div>
+        <div class="language">
+          <div class="language__circle">
+            <i class="fa-solid fa-globe"></i>
+            <span>Tiếng Việt</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".trending__list").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+      });
+    </script>
+  </body>
+</html>
