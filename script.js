@@ -61,3 +61,31 @@ function login() {
     logerrorMessage.style.alignItems = "center";
   }
 }
+
+// slide
+
+$('.slidecenter').slick({
+  arrows: false
+});
+
+// slide item
+
+$(".trending__list").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  arrows: false,
+});
+
+function Show() {
+  const xemthem = document.getElementById('bluelyric__lyric_xemthem');
+  const show = document.getElementById('show');
+
+  if (xemthem.style.display === 'none') {
+    xemthem.style.display = 'block';
+    show.textContent = 'Hiển thị ít hơn';
+  } else {
+    xemthem.style.display = 'none';
+    show.textContent = '...Xem thêm';
+  }
+}
