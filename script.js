@@ -52,8 +52,7 @@ function login() {
   if (userData && userData.email === email && userData.password === password) {
     window.location.href = "index.html";
   } else {
-    logerrorMessage.innerHTML =
-      "Tài khoản hoặc mật khẩu không chính xác";
+    logerrorMessage.innerHTML = "Tài khoản hoặc mật khẩu không chính xác";
     logerrorMessage.style.display = "flex";
     logerrorMessage.style.color = "red";
     logerrorMessage.style.fontSize = "13px";
@@ -64,8 +63,8 @@ function login() {
 
 // slide
 
-$('.slidecenter').slick({
-  arrows: false
+$(".slidecenter").slick({
+  arrows: false,
 });
 
 // slide item
@@ -77,15 +76,70 @@ $(".trending__list").slick({
   arrows: false,
 });
 
+// showmore lyrics
 function Show() {
-  const xemthem = document.getElementById('bluelyric__lyric_xemthem');
-  const show = document.getElementById('show');
+  const xemthem = document.getElementById("bluelyric__lyric_xemthem");
+  const show = document.getElementById("show");
 
-  if (xemthem.style.display === 'none') {
-    xemthem.style.display = 'block';
-    show.textContent = 'Hiển thị ít hơn';
+  if (xemthem.style.display === "none") {
+    xemthem.style.display = "block";
+    show.textContent = "Hiển thị ít hơn";
   } else {
-    xemthem.style.display = 'none';
-    show.textContent = '...Xem thêm';
+    xemthem.style.display = "none";
+    show.textContent = "...Xem thêm";
   }
 }
+
+//slide trendy
+
+$(".blueslidetrendy__list").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  arrows: false,
+});
+
+// play
+const playBtn = document.querySelector(".play__start");
+const audio = document.getElementById("audio-player");
+const progressBar = document.getElementById("progress-bar");
+const progressContainer = document.querySelector(".progress-container");
+const playIcon = document.getElementById("play-icon");
+
+function togglePlay() {
+  if (audio.paused) {
+    audio.play();
+    playIcon.classList.remove("fa-play");
+    playIcon.classList.add("fa-pause");
+  } else {
+    audio.pause();
+    playIcon.classList.remove("fa-pause");
+    playIcon.classList.add("fa-play");
+  }
+}
+
+playBtn.addEventListener("click", togglePlay);
+playIcon.addEventListener("click", (e) => {
+  e.stopPropagation();
+  togglePlay();
+});
+
+audio.addEventListener("timeupdate", () => {
+  const percent = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.width = percent + "%";
+});
+
+audio.addEventListener("ended", () => {
+  playIcon.classList.remove("fa-pause");
+  playIcon.classList.add("fa-play");
+  progressBar.style.width = "0%";
+});
+
+// 👉 Tua nhạc khi click vào progress
+progressContainer.addEventListener("click", (e) => {
+  const width = progressContainer.clientWidth;
+  const clickX = e.offsetX;
+  const duration = audio.duration;
+
+  audio.currentTime = (clickX / width) * duration;
+});

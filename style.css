@@ -459,13 +459,13 @@ body {
 }
 
 .sign__form input {
- width: 100%;
- height: 48px;
- padding: 12px;
- background-color: #121212;
- border: white 1px solid;
- border-radius: 3px;
- color: white;
+  width: 100%;
+  height: 48px;
+  padding: 12px;
+  background-color: #121212;
+  border: white 1px solid;
+  border-radius: 3px;
+  color: white;
 }
 
 .sign__form a {
@@ -523,7 +523,7 @@ body {
   text-align: center;
 }
 
-.sign__back a{
+.sign__back a {
   color: var(--text-color-white);
   font-weight: 400;
 }
@@ -557,7 +557,7 @@ body {
   margin-top: 50px;
 }
 
-.cre__input input{
+.cre__input input {
   width: 100%;
   height: 48px;
   background-color: #000;
@@ -601,15 +601,18 @@ body {
 
 .blueback {
   position: fixed;
-  color: white;
   padding: 16px;
+}
+
+.blueback a {
+  color: white;
 }
 
 /* bluecontent */
 
 .bluecontent {
   padding: 72px 16px 16px 16px;
-  background: linear-gradient(rgb(104, 96, 80) 0%, transparent 100%);;
+  background: linear-gradient(rgb(104, 96, 80) 0%, transparent 100%);
 }
 
 .bluecontent__img {
@@ -658,7 +661,7 @@ body {
 .blueyear {
   font-size: 13px;
   font-weight: 400;
-  color:#ffffffb2;
+  color: #ffffffb2;
   margin-top: 10px;
 }
 
@@ -679,10 +682,13 @@ body {
 }
 
 .blueheart__right {
-  color: #1ed760;
+  background-color: #1ed760;
   display: flex;
+  padding: 15px;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* BlueLyric */
@@ -721,7 +727,7 @@ body {
   display: flex;
 }
 
-.blueinfo__img img{
+.blueinfo__img img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -739,4 +745,175 @@ body {
 
 .blueinfo__title_space {
   padding-bottom: 8px;
+}
+
+/* Blueproposal */
+
+.blueproposal {
+  padding: 0px 16px;
+}
+
+.blueproposal h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px 0px;
+}
+
+.blueproposal__item {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.blueproposal__img {
+  width: 56px;
+  height: 56px;
+  margin-right: 12px;
+}
+
+.blueproposal__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.blueproposal__titlee {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.blueproposal__artist {
+  font-size: 11px;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+
+.blueproposal__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Slide trendy */
+
+.blueslidetrendy {
+  padding: 0px 16px;
+}
+
+.blueslidetrendy h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  margin: 24px 0px 12px 0px;
+}
+
+.blueslidetrendy__item {
+  margin: 0px 5px;
+}
+
+.blueslidetrendy__img {
+  width: 100%;
+  position: relative;
+}
+
+.blueslidetrendy__img img {
+  width: 100%;
+  aspect-ratio: 16 / 16;
+  object-fit: cover;
+  display: block;
+}
+
+.blueslidetrendy__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.blueslidetrendy__titlee {
+  font-size: 13px;
+  color: white;
+  font-weight: 700;
+}
+
+.blueslidetrendy__artist {
+  font-size: 11px;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+
+/* play */
+
+.play {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(94, 123, 141);
+  border-radius: 6px;
+  margin: 0px 8px 8px;
+  padding: 8px;
+}
+
+.play__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.play__img img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.play__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.play__title {
+  font-size: 13px;
+  color: white;
+  font-weight: 700;
+}
+
+.play__artist {
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
+}
+
+.play__icon {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-right: 8px;
+}
+
+.play__heart {
+  margin-right: 15px;
+  color: white;
+}
+
+.play__start {
+  color: white;
+}
+
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #1db954;
+  transition: width 0.1s linear;
 }
